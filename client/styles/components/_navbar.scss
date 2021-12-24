@@ -1,0 +1,90 @@
+.navbar-container {
+  height: 60px;
+
+  @media (max-width: 768px) {
+    height: 50px;
+  }
+
+  .navbar-wrapper {
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      height: 30px;
+      padding: 10px 0px;
+    }
+
+    .navbar-left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      .navbar-language {
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .navbar-searchContainer {
+        border: 0.5px solid lightgray;
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        padding: 5px;
+
+        input {
+          border: none;
+        }
+      }
+    }
+
+    .navbar-center {
+      flex: 1;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 15px;
+      }
+
+      .navbar-logo {
+        font-weight: bold;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .navbar-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @media (max-width: 768px) {
+        flex: 2;
+        margin-right: 15px;
+      }
+
+      .navbar-menuItem {
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 25px;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

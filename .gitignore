@@ -1,0 +1,41 @@
+# dependencies
+/api/node_modules
+/client/node_modules
+/admin/node_modules
+/client/.pnp
+/admin/.pnp
+/client.pnp.js
+/admin/.pnp.js
+
+# testing
+client/coverage
+admin/coverage
+
+# production
+/api/build
+/client/build
+/admin/build
+
+# misc
+.env
+.env.local
+yarn.lock
+package-lock.json
+.DS_Store
+*.pem
+/admin/src/shared/functions/firebase.ts
+
+# next.js
+/client/.next/
+/client/out/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo

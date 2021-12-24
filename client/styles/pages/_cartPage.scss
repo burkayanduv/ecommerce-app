@@ -1,0 +1,149 @@
+.cartPage-container {
+  .cartPage-wrapper {
+    padding: 20px;
+
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+
+    h1 {
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .cartPage-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+
+      button {
+        padding: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: transparent;
+      }
+
+      .cartPage-topTexts {
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+          margin: 0px 10px;
+        }
+      }
+    }
+
+    .cartPage-bottom {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .cartPage-info {
+        flex: 3;
+
+        .cartPage-product {
+          display: flex;
+          justify-content: space-between;
+
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
+
+          .cartPage-productDetail {
+            flex: 2;
+            display: flex;
+
+            .cartPage-imageContainer {
+              width: 200px;
+              position: relative;
+            }
+
+            .cartPage-details {
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+
+              .cartPage-productColor {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+              }
+            }
+          }
+
+          .cartPage-priceDetail {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .cartPage-productAmountContainer {
+              display: flex;
+              align-items: center;
+              margin-bottom: 20px;
+
+              .cartPage-productAmount {
+                font-size: 24px;
+                margin: 5px;
+
+                @media (max-width: 768px) {
+                  margin: 5px 15px;
+                }
+              }
+            }
+
+            .cartPage-productPrice {
+              font-size: 30px;
+              font-weight: 200;
+
+              @media (max-width: 768px) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+
+        hr {
+          background-color: #eee;
+          border: none;
+          height: 1px;
+        }
+      }
+
+      .cartPage-summary {
+        flex: 1;
+        border: 0.5px solid lightgray;
+        border-radius: 10px;
+        padding: 20px;
+        height: 50vh;
+
+        h1 {
+          font-weight: 200;
+        }
+
+        .cartPage-summaryItem {
+          margin: 30px 0px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: black;
+          color: white;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

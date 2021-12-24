@@ -1,0 +1,10 @@
+@use './variables';
+@use 'components';
+@use 'pages';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: variables.$font;
+}
